@@ -238,7 +238,9 @@ img {
   font-size: 16px;
   line-height: 1.6;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -446,7 +448,8 @@ img {
   align-items: center;
   color: var(--icons-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list {
@@ -483,10 +486,6 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-
-  transition-property: box-shadow, border-radius;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product-list .item {
   width: 370px;
@@ -532,7 +531,7 @@ img {
 
 .product-link:hover,
 .product-link:focus {
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -561,7 +560,10 @@ img {
   height: 100%;
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin: 0;
   background: rgba(33, 150, 243, 0.9);
@@ -639,7 +641,8 @@ img {
   align-items: center;
   color: var(--icons-color);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   width: 106px;
@@ -754,9 +757,9 @@ img {
   align-items: center;
   color: var(--white-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-footer-icon {
   width: 20px;
   height: 20px;
